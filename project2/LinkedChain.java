@@ -1,10 +1,8 @@
 /**
- * A generic chain of linked nodes. Use it as the storage inside your
- * own classes, and extend or modify it as your project needs.
+ * A generic chain of linked nodes.
  *
- * This class owns storage only: nodes, the head reference, and the
- * count. It contains no application logic. A class that needs a
- * collection should hold a LinkedChain field and call its methods.
+ * This class only owns storage: nodes, the head reference, and the
+ * count. It contains no application logic. 
  *
  * add() places the new entry at the FRONT of the chain, so entries added
  * with add() come back from toArray() in reverse order of insertion.
@@ -24,8 +22,8 @@
  *   isEmpty          O(1)
  *   toArray          O(n)
  *
- * @author CS 2114 Staff
- * @version September 2026
+ * @author 
+ * @version 
  *
  * @param <T> the type of entries stored in the chain
  */
@@ -291,8 +289,8 @@ public class LinkedChain<T>
     }
 
     /**
-     * Returns a readable listing of the chain, first entry first,
-     * e.g. "[a, b, c]".
+     * Returns a readable listing of the chain, first entry first
+     * 
      *
      * @return a string representation of this chain
      */
@@ -315,7 +313,7 @@ public class LinkedChain<T>
     }
 
     /**
-     * Rejects null entries.
+     * Rejects null entries
      *
      * @param entry the entry to check
      * @throws IllegalArgumentException if entry is null
@@ -329,7 +327,7 @@ public class LinkedChain<T>
     }
 
     /**
-     * A node in the chain. Holds one entry and a link to the next node.
+     * A node in the chain. Holds one entry and a link to the next node
      *
      * @param <E> the type of data held in the node
      */
@@ -339,7 +337,7 @@ public class LinkedChain<T>
         private Node<E> next;  // link to the next node, or null
 
         /**
-         * Creates a node with the given data and no next node.
+         * Creates a node with the given data and no next node
          *
          * @param dataPortion the entry to store
          */
@@ -349,7 +347,7 @@ public class LinkedChain<T>
         }
 
         /**
-         * Creates a node with the given data and next link.
+         * Creates a node with the given data and next link
          *
          * @param dataPortion the entry to store
          * @param nextNode the node that follows this one
