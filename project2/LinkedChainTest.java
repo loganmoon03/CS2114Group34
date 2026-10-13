@@ -1,3 +1,11 @@
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertSame;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import student.TestCase;
 /**
  * A testing class for the LinkedChain class.
  * 
@@ -40,6 +48,7 @@ public class LinkedChainTest extends student.TestCase {
         }
         assertNotNull(thrown);
         assertEquals(3, chain.size());
+        
     }
 
     /**
@@ -136,6 +145,64 @@ public class LinkedChainTest extends student.TestCase {
         assertTrue(chain.remove("dup"));
         assertEquals("[other, dup]", chain.toString());
         assertEquals(1, chain.count("dup"));
+    }
+
+    /**
+     * More tests for get() including valid and invalid indices.
+     */
+    public void testGet() {
+        chain.addToEnd("a");
+        chain.addToEnd("b");
+        chain.addToEnd("c");
+ 
+        assertEquals("a", chain.get(0));
+        assertEquals("b", chain.get(1));
+        assertEquals("c", chain.get(2));
+ 
+        // get does not remove
+        assertEquals(3, chain.size());
+ 
+        Exception thrown = null;
+        try {
+            chain.get(-1);
+        }
+        catch (IndexOutOfBoundsException e) {
+            thrown = e;
+        }
+        assertNotNull(thrown);
+
+ 
+        thrown = null;
+        try {
+            chain.get(3);
+        }
+        catch (IndexOutOfBoundsException e) {
+            thrown = e;
+        }
+        assertNotNull(thrown);
+
+ 
+        thrown = null;
+        try {
+            chain.get(100);
+        }
+        catch (IndexOutOfBoundsException e) {
+            thrown = e;
+        }
+        assertNotNull(thrown);
+ 
+ 
+        // empty chain
+        chain.clear();
+        thrown = null;
+        try {
+            chain.get(0);
+        }
+        catch (IndexOutOfBoundsException e) {
+            thrown = e;
+        }
+        assertNotNull(thrown);
+
     }
 
 
