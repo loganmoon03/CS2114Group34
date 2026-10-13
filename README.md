@@ -67,27 +67,19 @@ If you use an IDE (Eclipse, IntelliJ, VS Code), add the same jars to the project
 
 ## Attribution
 
-| Section | Team member(s) | Contribution (how) |
-|---|---|---|
-| LinkedChain | Dochan (Logan) Moon | I added removeAt that removes and returns the entry at the index |
-| RaffleTicket | Dochan (Logan) Moon | I created a class that stores the information for raffle tickets with the participants ID and name |
-| Prize | Dochan (Logan) Moon | I created a class that gets the information for raffle prizes with the name and its description |
-| Raffle | Dochan (Logan) Moon | I created a class that has three linkedChain fields for tickets, prizes, and results. It receives tickets and prizes and draws winner and prize randomly and rejects if empty. I asked Claude what fields I should have for the class. |
-| Result | Dochan (Logan) Moon | I created a class that has three linkedChain fields for tickets, prizes, and results that have been drawn. |
-| Main | Dochan (Logan) Moon | I created a main class that handles the input from the user with the help from Claude on which inputs are necessary for the program. |
-| RaffleTicketTest | Dochan (Logan) Moon | I asked Claude to review my tests and provide what I've missed to test all cases. |
-| PrizeTest | Dochan (Logan) Moon | I asked Claude to review my tests and provide what I've missed to test all cases. |
-| ResultTest | Dochan (Logan) Moon | I asked Claude to review my tests and provide what I've missed to test all cases. |
-| RaffleTest | Dochan (Logan) Moon | I asked Claude to review my tests and provide what I've missed to test all cases. |
+| Section          | Team member(s)      | Contribution (how)                                                                                                                                                                                                                     |
+| ---------------- | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| LinkedChain      | Dochan (Logan) Moon | I added removeAt that removes and returns the entry at the index                                                                                                                                                                       |
+| RaffleTicket     | Dochan (Logan) Moon | I created a class that stores the information for raffle tickets with the participants ID and name                                                                                                                                     |
+| Prize            | Dochan (Logan) Moon | I created a class that gets the information for raffle prizes with the name and its description                                                                                                                                        |
+| Raffle           | Dochan (Logan) Moon | I created a class that has three linkedChain fields for tickets, prizes, and results. It receives tickets and prizes and draws winner and prize randomly and rejects if empty. I asked Claude what fields I should have for the class. |
+| Result           | Dochan (Logan) Moon | I created a class that has three linkedChain fields for tickets, prizes, and results that have been drawn.                                                                                                                             |
+| Main             | Dochan (Logan) Moon | I created a main class that handles the input from the user with the help from Claude on which inputs are necessary for the program.                                                                                                   |
+| RaffleTicketTest | Dochan (Logan) Moon | I asked Claude to review my tests and provide what I've missed to test all cases.                                                                                                                                                      |
+| PrizeTest        | Dochan (Logan) Moon | I asked Claude to review my tests and provide what I've missed to test all cases.                                                                                                                                                      |
+| ResultTest       | Dochan (Logan) Moon | I asked Claude to review my tests and provide what I've missed to test all cases.                                                                                                                                                      |
+| RaffleTest       | Dochan (Logan) Moon | I asked Claude to review my tests and provide what I've missed to test all cases.                                                                                                                                                      |
 
 ## Authors
-
-## Attribution
-
-| Section | Team member(s) | Contribution (how) |
-| ------- | -------------- | ------------------ |
-| Row 1-1 | Row 1-2        | Row 1-3            |
-| Row 2-1 | Row 2-2        | Row 2-3            |
-| Row 3-1 | Row 3-2        | Row 3-3            |
 
 Group 34
