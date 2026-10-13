@@ -191,7 +191,7 @@ public class Raffle
      */
     public String listTickets()
     {
-        return buildList(tickets.toArray(new RaffleTicket[tickets.size()]));
+        return makeList(tickets.toArray(new RaffleTicket[tickets.size()]));
     }
 
 
@@ -203,7 +203,7 @@ public class Raffle
      */
     public String listPrizes()
     {
-        return buildList(prizes.toArray(new Prize[prizes.size()]));
+        return makeList(prizes.toArray(new Prize[prizes.size()]));
     }
 
 
@@ -215,7 +215,7 @@ public class Raffle
      */
     public String listResults()
     {
-        return buildList(results.toArray(new Result[results.size()]));
+        return makeList(results.toArray(new Result[results.size()]));
     }
 
     // ~ Private Methods .......................................................
@@ -228,7 +228,7 @@ public class Raffle
      * @param items the items copied out of a chain, first entry first
      * @return the items as text, one per line
      */
-    private String buildList(Object[] items)
+    private String makeList(Object[] items)
     {
         String text = "";
         int number = 1;
