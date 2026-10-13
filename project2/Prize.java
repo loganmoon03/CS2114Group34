@@ -69,7 +69,7 @@ public class Prize
         {
             return true;
         }
-        if (other == null || !(other instanceof Prize))
+        if (other == null || getClass() != other.getClass())
         {
             return false;
         }
@@ -79,6 +79,7 @@ public class Prize
         return name.equals(that.name)
             && description.equals(that.description);
     }
+
 
 
     // ----------------------------------------------------------

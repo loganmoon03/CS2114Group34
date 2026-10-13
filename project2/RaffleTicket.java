@@ -69,7 +69,7 @@ public class RaffleTicket
         {
             return true;
         }
-        if (other == null || !(other instanceof RaffleTicket))
+        if (other == null || getClass() != other.getClass())
         {
             return false;
         }

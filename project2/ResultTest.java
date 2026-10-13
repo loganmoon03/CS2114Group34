@@ -61,7 +61,7 @@ public class ResultTest
     /**
      * Tests the getters when the result was made with nothing.
      */
-    public void testGettersWithNull()
+    public void testWhenNull()
     {
         // * the result does not check its values, Raffle does
         Result empty = new Result(null, null);
