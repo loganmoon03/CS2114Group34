@@ -81,7 +81,7 @@ What happened to your unknowns? Of the things you listed in your scope as not kn
 
 What doesn't work yet? MVP features, bad-input cases, or tests that are missing or failing in this prototype.
 
-- ID conflict checking only searches remaining tickets, so an ID can be reused with another name after all its tickets are drawn. Listing uses repeated string concatenation instead of the planned StringBuilder, so its performance needs improvement. We still need to add function and tests for excluding the participant ID from the results list after a win, and to prevent drawing a prize when no tickets remain.
+- ID conflict checking only searches remaining tickets, so an ID can be reused with another name after all its tickets are drawn. Listing uses repeated string concatenation instead of the planned StringBuilder, so its performance needs improvement. We still need to add function and tests for removing selected winner with the remaining tickets.
 
 ## Next steps
 
