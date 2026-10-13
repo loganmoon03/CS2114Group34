@@ -115,6 +115,9 @@ Who does what? Which team member owns each remaining item.
 | PrizeTest        | Dochan (Logan) Moon | I asked Claude to review my tests and provide what I've missed to test all cases.                                                                                                                                                      |
 | ResultTest       | Dochan (Logan) Moon | I asked Claude to review my tests and provide what I've missed to test all cases.                                                                                                                                                      |
 | RaffleTest       | Dochan (Logan) Moon | I asked Claude to review my tests and provide what I've missed to test all cases.                                                                                                                                                      |
+| LinkedChainTest | David Sage | Created a testing class for the linkedchain class analyzing each method and writing corresponding test cases
+
+| readme | David Sage | Created the readme document for all sections besides reflection and next steps
 
 ## Authors
 
